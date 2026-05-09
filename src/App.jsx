@@ -182,7 +182,21 @@ export default function App() {
               <h1 style={{ fontSize: "32px", fontWeight: "700", lineHeight: "1.2", marginBottom: "16px", letterSpacing: "-1px" }}>
                 Ce mois-ci
               </h1>
-< truncated lines 185-197 >
+< tru              <p style={{ color: "#888", fontSize: "15px", lineHeight: "1.7" }}>
+                Entrez les heures réellement travaillées et le salaire reçu.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
+              <Field label="Heures réellement travaillées cette semaine / période">
+                <input
+                  placeholder="Ex: 42"
+                  value={form.heuresTravaillees}
+                  onChange={e => set("heuresTravaillees", e.target.value)}
+                  style={{ ...inputStyle, width: "100%" }}
+                  type="number"
+                />
+              </Field>
+
                 />
               </Field>
 
